@@ -1,0 +1,4 @@
+🧩 What is tldr?
+
+tl;dr stands for “too long; didn’t read.”
+It’s a community-driven collection of simplified man pages (manuals) for common terminal commands.
