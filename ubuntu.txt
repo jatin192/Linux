@@ -1,4 +1,42 @@
+﻿$ cd
+$ mkdir folder_name
+$ ls
+$ pwd
+$ touch 1.txt
+$ sudo -i 
+$ rm 
+$ rmdir
+$ rm -r
+$ stat File_Fodler_name
+$ uptime
+$ nautilus  path/path/path
+$ whoami
+$ exit
+$ grep -r "word_find"  folder/
+$ npm install --legacy-peer-deps
+
+Size/Links /Access/Modify/Change/Birth
+
+$ nvm ls             
+Find out which versions of Node.js you may have installed and which one of those you're currently using:
+$ nvm use 20.17.0
+
+#used to broadcast important notifications or announcements to all users currently logged into the system.
+$ wall "we will be going down for maintenance for one hour sharply at 03:30 pm"
+
+#combines the functionality of both the ‘uptime‘ and ‘who‘ commands,
+# w
+
+___________________________Rearly Used_______________________________________
+
+$ nslookup google.com                                                          # Find the IP Address of a Website
+
+_________________________ Ubuntu software related ________________________________
+$ sudo swapoff -a                                                                                            # swap memory off
+
 🧩 What is tldr?
 
 tl;dr stands for “too long; didn’t read.”
 It’s a community-driven collection of simplified man pages (manuals) for common terminal commands.
+
+
