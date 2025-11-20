@@ -1,0 +1,213 @@
+			git branch && git status  && git add . && git status && git commit -m “commit” && git push origin main
+
+$ tldr  																		# too long; didn’t read	
+$ tldr man 
+_____________________________________________________________________________________________________________
+$ command1 | command2    							# Pass the output of command1 as input to command2
+$ command1 && command2  						# Run command2 ONLY if command1 succeeds
+$ command1 || command2   							# Run command2 ONLY if command1 fails
+$ command1 ; command2    							# Run command2 regardless of whether command1 succeeds or fails
+
+$ ls -l | grep ".txt"        								# List files and filter only .txt files
+_____________________________________________________________________________________________________________
+$ cd									  		          	  						 # change directory 
+$ cd /						  		          		  	          					 # Go to the root directory 
+$ cd -									  		                  			       # Go to the previously chosen directory 
+_____________________________________________________________________________________________________________
+$ ls
+$ ls -1																	    # List files one per line 
+$ ls -a			& 	$ ls --all											     # List all files + hidden files 
+     	
+Options/Flag																    					
+-h 	=	--human-readable  
+-r 	=	--reverse
+-R	=	--recursive
+-ls 	= 	-l -s                               ************
+-a	=	--all
+
+-l  → long listing
+-s  → show block size
+
+$ ls -a -1			& 	$ ls –1a									         # List all files + hidden files + one per line 
+$ ls -ls --recursive	& 	$ ls –ls -R			           # *****List files in Long format, sorted by Size (descending  + recursively) 
+$ ls -ls   			&	$ ls –sl		&	$ ls –l -s
+$ ls -ls –human-readable
+$ ls -ls  -r   
+_____________________________________________________________________________________________________________
+$ pwd						  					 						     # Print working directory 		
+$ sudo -i                                            	 		  				 					   	              # Super user😎️ 
+$ sudo -s	& 	$ sudo --shell                                           	 		  		             # (Super user😎️ + without changing the env )
+_____________________________________________________________________________________________________________
+$ rm path1/file1 path2/file2 								  						           # Remove specific files 
+$ rmdir												  				                  # Remove specific empty directories 
+rm -rf */
+rmdir: Only deletes empty directories.
+    • rm -rf: Deletes directories and their contents, including non-empty ones.
+
+$ rm -r folder    
+	or     
+$ rm --recursive folder
+Flag	Meaning	Example
+-r	recursive  # delete directories 	$ rm -r folder
+-f	force (no confirmation, ignore errors) 	$ rm -rf folder ❌ (Dangerous 
+-i	interactive (ask before deleting each file )	$ rm -ri folder
+
+$ rm -ri folder2    								 	 # ✅ Safe Deletion 
+It will ask:
+rm: descend into directory 'folder2'? y
+rm: remove regular file 'folder2/file1'? y
+$ sudo rm -rf /  									 # ⚠️ Danger Zone &&  💀 NEVER run this  
+ It will recursively and forcefully delete everything from the root directory — basically wiping your OS.
+_____________________________________________________________________________________________________________
+$ history 		& 		$ history -10
+$ cat ~/.bash_history						 # bash_history = folder that store the list of commands you’ve typed in the terminal  
+$ <Space>command							          # Run a command without adding it to history by adding a leading space 
+	
+If you want to search for a specific command:
+Press Ctrl + R and start typing — it will search your history. 		*********
+  								
+You can also
+	  											- Clear the commands history list
+	  											- Overwrite history file with history of current Bash shell
+	  											- Delete the history entry at the specified offset
+	  										           - Add a command to history without running it
+	  											- Run a command without adding it to history by adding a leading space
+_____________________________________________________________________________________________________________
+$ lsblk									  		          	  				                           # List Block  
+																		 #  or View all storage devices 
+                                             Unicode	                                            ASCII
+     =  all characters from all languages + symbols + emojis
+							           (Universal Characters 							   
+   ह 你 ச আ  محبت A a Z z ✓ ✔ ✘ ✨ ★ → ← ↑ │ ─ ┼ 😊 😎 ❤️ 	    =  plain English keyboard characters only 
+                                                                      (letters, numbers, basic symbols 
+  
+   A a z Z 0 1 9 ! @ # $ % ^ & *- _ + = / ? .
+   Whereas ASCII is limited to 127 basic English characters	   Unicode has over 140,000 characters
+   Examples
+   $ lsblk
+   Uses Unicode characters for pretty tree:
+  ├─sda1
+  └─sda2	   
+    $ lsblk --ascii
+   Uses ASCII (simple characters) :								|-sda1										`-sda2
+                                                                                                ASCII ⊂  Unicode
+				                   ASCII is used because it is 100% safe, compatible, small, fast, and works everywhere.
+     			
+
+_______________________________________________ Rarely Used __________________________________________________
+$ nslookup google.com                                                                                                                           # Find the IP Address of a Website
+$ uptime													              # Tell how long the system has been running 
+$ whoami
+_____________________________________________________________________________________________________________
+
+_____________________________________________________________________________________________________________
+
+_____________________________________________________________________________________________________________
+
+_____________________________________________________________________________________________________________
+
+_____________________________________________________________________________________________________________
+
+___jatin__________________________________________________________________________________________________________
+
+$ mkdir folder_name	
+$ mkdir path/to/folder_name{1..10}							       # Create multiple folder with an increasing number 	
+$ touch path/to/file{1..10}										 # Create multiple files with an increasing number 
+$ touch 1.txt
+_____________________________________________________________________________________________________________
+$ stat File_Fodler_name   												        # Display file/folder information 
+$ nautilus  path/path/path
+$ nautilus  .
+$ grep -r "word_find"  folder/				*******************************
+
+
+
+
+
+$ tldr command  # eg. tldr tldr or tlder man 
+$ man command
+$ cat
+$ wget
+$ cp
+$ mv
+$ find
+$ chmod
+$ nano
+$ nautilus
+$ wc -l
+$ n
+$ n
+
+____________________________________________ GK _____________________________________________
+/usr/bin
+Where most installed developer tools go.
+Examples:
+    • /usr/bin/python3
+    • /usr/bin/git
+    • /usr/bin/node
+
+/opt
+Where manually installed dev tools go.
+Examples:
+    • /opt/android-studio/
+    • /opt/vscode/
+    • /opt/my-tools/
+      
+/usr/lib
+Libraries used by programming languages and tools.
+Examples:
+    • /usr/lib/python3.10/
+    • /usr/lib/jvm/ (Java)
+    • /usr/lib/docker/
+
+
+
+
+____________________________________________ Development Purpose _____________________________________________
+$ nvm ls             
+$ nvm use 20.17.0                  # Find out which versions of Node.js you may have installed and which one of those you're currently using
+$ npm install –legacy-peer-deps
+__________________________________________________ Swap  _____________________________________________________
+$ sudo swapoff -a                                                                                            							       # swap memory off
+_____________________________________ 🔑 Unlocking Your WD Passport Drive  _____________________________________
+$ sudo apt update  			
+$ sudo apt install -y python3-pip git
+$ sudo pip3 install pyudev git+https://github.com/crypto-universe/py_sg –break-system-packages
+$ lsblk   											            # List connected drives to find your device (e.g., /dev/sdx 
+$ cd /tmp												      # Go to temporary folder  → will vanish when rebooted
+/tmp (Temporary Directory)
+    • Stores temporary files.
+    • Files are automatically deleted (on reboot or after some time).
+    • /tmp = directory named tmp at root (/tmp).
+    • tmp/ (without leading slash) = a tmp folder in the current directory.
+$ wget https://raw.githubusercontent.com/0-duke/wdpassport-utils/master/wdpassport-utils.py -O wdpassport-utils.py 																	                         # 📥 Download WD Passport unlock script
+$ chmod +x wdpassport-utils.py												        	       # Make script executable
+$ sudo python3 /tmp/wdpassport-utils.py -u -d /dev/sdx*	            #🔓Unlock your WD Passport drive (replace sdx* with actual device 
+Flags Used
+    • -u                          → Unlock the drive 🔓
+    • -d /dev/sdx*  → Specify the WD Passport device path 💽
+    • +x                          → add execute permission ⚙️
+
+____________________________________________ Fan Mode Commands  ____________________________________________
+
+0 -> Super Silent Mode 🔇
+1 -> Standard Mode ⚙️
+2 -> Dust Cleaning 🧹
+4 -> Efficient Thermal Dissipation Mode 🌡️
+
+$ echo 0 | sudo tee /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/fan_mode
+$ echo 1 | sudo tee /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/fan_mode
+$ echo 2 | sudo tee /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/fan_mode
+$ echo 4 | sudo tee /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/fan_mode
+
+
+
+____________________________________________________________________________________________________________
+
+
+
+
+# used to broadcast important notifications or announcements to all users currently logged into the system.
+$ wall "we will be going down for maintenance for one hour sharply at 03:30 pm"
+#combines the functionality of both the ‘uptime‘ and ‘who‘ commands,
+# w
